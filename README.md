@@ -11,9 +11,28 @@ Clone this repo
     
 And set the home.html as homepages or new tabs in your browser.
 
+
+### Usage
+
+There is a few command that can be used :
+
+###### Open favourites website listed in web.json, example (open gmail):
+
+     :em
+
+###### Go to url, example :
+
+     :u http://lovepancakes.blog
+
+###### Search, example :
+
+     :s How to make a delicious pancakes at home
+
+
 ### Editing
 
 SEE [`web.json`](web.json).
+
 
 ### License
 
