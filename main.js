@@ -1,3 +1,10 @@
+var stylishHTML = function (conf) {
+    $("*").css("background", conf.background);
+    $("*").css("color", conf.foreground);
+    $("#logo").html(conf.greeting_text);
+    $("#cheat li span:first-child").css("color", conf.background);
+}
+
 $(function () {
   var conf = {};
   $("#cheatp").hide();
@@ -8,10 +15,8 @@ $(function () {
       $('#cheat ul').append($('<li>', {
         val: key
       }).html('<a href="' + val + '" target="_blank"><span>' + key + '</span><span>' + val + '</span></a>'));
+      stylishHTML(object);
     });
-    $("*").css("background", object.background);
-    $("*").css("color", object.foreground);
-    $("#cheat li span:first-child").css("color", object.background);
     $("ul li").sort(function (a, b) {
       return ($(a).width() < $(b).width()) ? -1 : ($(a).width() > $(b).width()) ? 1 : 0;
     }).appendTo('ul');
