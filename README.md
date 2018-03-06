@@ -9,11 +9,11 @@ Clone this repo
 
     git clone https://github.com/yuune/yuune-vim-startpage.git
     
-And set the index.html as homepages or new tabs in your browser
+And set the home.html as homepages or new tabs in your browser.
 
 ### Editing
 
-SEE `web.json`
+SEE [`web.json`](web.json).
 
 ### License
 
