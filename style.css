@@ -6,7 +6,8 @@
 }
 
 * {
-  color: #999;
+  background: #171928;
+  color: #c7b7c7;
   cursor: default;
   font-smooth: always
 }
@@ -103,10 +104,13 @@ input {
 }
 
 #cheat li span:first-child {
+  color: #171928;
+  background : rgba(200,200,200, 0.8);
   border-radius: 5px 0 0 5px
 }
 
 #cheat li span:last-child {
+  background: rgba(0,0,0, 0.4);
   border-radius: 0 5px 5px 0
 }
 
