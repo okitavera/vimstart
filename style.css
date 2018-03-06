@@ -96,17 +96,17 @@ input {
   opacity: 0.3
 }
 
-#cheat li span:first-child {
-  background: rgba(200, 200, 200, 0.8) !important;
+#cheat li span {
   padding: 10px 15px;
   display: inline-block;
   border-radius: 5px 0 0 5px
 }
 
+#cheat li span:first-child {
+  border-radius: 5px 0 0 5px
+}
+
 #cheat li span:last-child {
-  background: rgba(0, 0, 0, 0.4) !important;
-  padding: 10px 15px;
-  display: inline-block;
   border-radius: 0 5px 5px 0
 }
 
