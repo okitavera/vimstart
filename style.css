@@ -13,6 +13,8 @@
 }
 
 body {
+  opacity: 0;
+  transition: all .8s ease-in-out;
   width: 100%;
   margin: auto
 }
@@ -66,7 +68,7 @@ li a:focus span:last-child {
   padding: 50px 10px
 }
 
-input {
+#box {
   cursor: text;
   border: 0;
   margin: 0;
@@ -75,8 +77,11 @@ input {
   font-family: "PF Tempesta Five Condensed";
   padding: 10px 15px;
   transition: all .2s ease-in-out;
-  box-sizing: border-box;
-  border-radius: 5px
+  box-sizing: border-box
+}
+
+#cheatp {
+  display: none;
 }
 
 #cheat ul {
@@ -114,10 +119,3 @@ input {
   border-radius: 0 5px 5px 0
 }
 
-img {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 450px;
-  z-index: -1
-}

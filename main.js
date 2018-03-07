@@ -20,9 +20,6 @@ $(function () {
     var site = new RegExp("^:u (.*)$");
     var input = $("#box").val();
 
-
-    $("#cheatp").hide();
-
     $.getJSON("web.json", function (object) {
         $.each(object.favourites, function (key, val) {
             $("#cheat ul").append("<li><a href='" + val.url + "' target='_blank'><span>" + val.key + "</span><span>" + val.url + "</span></a></li>");
@@ -44,6 +41,7 @@ $(function () {
         if (e.keyCode === 27) {
             $("#box").blur();
             $("#box").val("");
+            $("#cheatp").slideUp();
             $("#holder").html("type  :&lt;key&gt;  and  hit enter");
             $("#cheat ul li").each(function () {
                 $(this).removeClass("dis");
